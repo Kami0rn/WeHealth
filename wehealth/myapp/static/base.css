@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.navb{
+    font-family: "Montserrat","Roboto";
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(90, 164, 228) ;
+    text-decoration: none;
+}
+.nav_link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tag {
+    background-color: #b4b6b4; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+    
+}
+@media only screen and (max-width: 425px){
+    .tag{
+        font-size: 14px; 
+        padding: 10px 14px;
+    }
+}
+@media only screen and (max-width: 375px){
+    .tag{
+        font-size: 14px; 
+        padding: 10px 7px;
+    }
+}
+
+.nava{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: rgb(236, 234, 234);
+    width: 100vw;
+}
+.Arma {
+    color: brown;
+    font-size: smaller;
+}
+
+.inputBox{
+    position: relative;
+    width: 250px;
+    margin: 10px;
+}
+.inputBox input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid;
+    background: rgb(226, 226, 226);
+    border-radius: 5px;
+    outline: none;
+    color: aliceblue;
+    font-size: 1em;
+
+}
+.inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 0.8em;
+    color: #686868;
+    background: none;
+}
+
+.inputBox input:focus ~ span
+{
+   /* color: black;
+   transform: translateX(10px) translateY(-10px);
+   font-size: 0.65em; */
+   display: none;
+}
+.navt{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.calender,.profile{
+    padding: 20px;
+}
+.kl{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

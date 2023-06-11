@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'base.css' %}">
+    
+    {% block title %}
+    {% endblock %}
+</head>
+<body>
+    <header class="navt">
+        <div class="inputBox">
+            <input type="text">
+            <span>ค้นหาสถานที่ออกกําลังกาย</span>
+        </div>
+        <div>
+            <img class="calender" src="" alt="logo">
+        </div>
+        <div>
+            <img class="profile" src="" alt="logo">
+        </div>
+    </header>
+    <div class="kl">
+        <header class="nava">
+            <nav>
+                <ul class="nav_link">
+                    <ul><a class="tag" href="/">Workout</a></ul>
+                    <ul><a class="tag" href="/trainer">Trainer</a></ul>
+                    <ul><a class="tag" href="/treat">Treatment</a></ul>
+                    <ul><a class="tag" href="/chat">Chat</a></ul>
+                    <ul><a class="tag" href="/info">Information</a></ul>
+                
+                </ul>
+            </nav>
+        
+        </header>
+    </div>
+        <div style="color: brown;">   
+            <a href="/">Home</a>
+            <a href="/login">Login</a>
+            <a href="/treat">Treat</a>
+            <hr>
+        </div>
+       
+    <div>
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>
